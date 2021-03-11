@@ -1,0 +1,12 @@
+A ver
+podriamos calcular segun los fans cuales han sido los mejores año para el anime de scifi considerando los años
+su ranquin y considerar segun su año cual es el promedio de calificaciones, quizá tenga que sacar de rango un 
+par de años, pero para eso tendria que hacer interactiva la data.
+Tambien puedo ver cuales son los  otros generos con los cuales los animes de ciencia ficción suelen tener relación
+
+Tambien puedo calcular, que casa hace los mejores animes de ciencia ficción
+
+incluso re-cacular toda la información anterior segun sus categorias y sus años
+
+para eso tendriamos que tomar
+Los promedios, los años 
