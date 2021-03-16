@@ -26,10 +26,11 @@ class QuotesSpider(scrapy.Spider):
         dates = response.xpath('//span[@class="remain-time"]/text()').getall()
         
         scores = [score.strip() for score in scores ]
-        dates = [date.strip() for date in dates ]
+        dates = [date.strip() for date in dates]
         
-        yield {
-            'titulo ': 'anmime',
-            'score': scores,
-            'dates ': dates,
-        }
+        for posicion in range(len(scores)):
+            yield {
+                'titulo ': 'anmime',
+                'score': scores[posicion],
+                'date': dates[posicion]
+            }
