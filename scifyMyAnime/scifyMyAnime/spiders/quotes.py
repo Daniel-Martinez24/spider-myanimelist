@@ -1,7 +1,5 @@
 import scrapy
 
-# que es un cb_kwargs={'url': response.urljoin(links)}
-
 class QuotesSpider(scrapy.Spider):
     name = 'animes'
     start_urls = [
@@ -9,8 +7,8 @@ class QuotesSpider(scrapy.Spider):
     ]
 
     custom_settings = {
-        'FEED_URI': 'scifianimes.json',
-        'FEED_FORMAT': 'json',
+        'FEED_URI': 'scifianimes.cvs',
+        'FEED_FORMAT': 'csv',
         'ROBOTSTXT_OBEY': True
     }
 
