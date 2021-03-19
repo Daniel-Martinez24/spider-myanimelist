@@ -22,13 +22,14 @@ class QuotesSpider(scrapy.Spider):
     def parse_pages(self, response):
         scores = response.xpath('//span[@title="Score"]/text()').getall()
         dates = response.xpath('//span[@class="remain-time"]/text()').getall()
+        titles = response.xpath('//a[@class="link-title"]/text()').getall()
         
         scores = [score.strip() for score in scores ]
         dates = [date.strip() for date in dates]
         
         for posicion in range(len(scores)):
             yield {
-                'titulo ': 'anmime',
+                'titulo ': titles[posicion],
                 'score': scores[posicion],
                 'date': dates[posicion]
             }
